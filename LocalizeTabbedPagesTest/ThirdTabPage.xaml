@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="LocalizeTabbedPagesTest.ThirdTabPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:localization="clr-namespace:LocalizationResourceManager.Maui;assembly=LocalizationResourceManager.Maui"
+    Title="ThirdTabPage">
+    <VerticalStackLayout>
+        <Label
+            HorizontalOptions="Center"
+            Text="{localization:Translate World}"
+            VerticalOptions="Center" />
+
+        <Button
+            Clicked="OnToggleLanguage"
+            HorizontalOptions="Center"
+            Text="{localization:Translate ToggleLanguage}" />
+    </VerticalStackLayout>
+</ContentPage>

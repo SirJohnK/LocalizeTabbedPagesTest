@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage
+    x:Class="LocalizeTabbedPagesTest.MainTabbedPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:LocalizeTabbedPagesTest"
+    xmlns:localization="clr-namespace:LocalizationResourceManager.Maui;assembly=LocalizationResourceManager.Maui">
+
+    <TabbedPage.Children>
+        <local:FirstTabPage Title="{localization:Translate Home}" />
+        <local:SecondTabPage Title="{localization:Translate Hello}" />
+        <local:ThirdTabPage Title="{localization:Translate World}" />
+    </TabbedPage.Children>
+</TabbedPage>
